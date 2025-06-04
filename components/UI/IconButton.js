@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
   btn: {
     justifyContent: "center",
     alignItems: "center",
+    marginRight: 20,
   },
   pressed: {
     opacity: 0.7,
