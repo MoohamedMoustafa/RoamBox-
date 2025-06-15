@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" backgroundColor={Colors.primary500} />
+      <StatusBar style="light" backgroundColor="red" />
       <SafeAreaProvider>
         <SafeAreaView style={{ flex: 1 }}>
           <NavigationContainer>
@@ -26,17 +26,17 @@ export default function App() {
               <Stack.Screen
                 name="AllPlaces"
                 component={AllPlaces}
-                options={({ navigation }) => ({
-                  title: "Your Favorite Places",
-                  headerRight: ({ tintColor }) => (
-                    <IconButton
-                      icon="add"
-                      size={28}
-                      color={tintColor}
-                      onPress={() => navigation.navigate("AddPlace")}
-                    />
-                  ),
-                })}
+                // options={({ navigation }) => ({
+                //   title: "Your Favorite Places",
+                //   headerRight: ({ tintColor }) => (
+                //     <IconButton
+                //       icon="add"
+                //       size={28}
+                //       color={tintColor}
+                //       onPress={() => navigation.navigate("AddPlace")}
+                //     />
+                //   ),
+                // })}
               />
               <Stack.Screen
                 name="AddPlace"

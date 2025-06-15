@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import ControlledInput from "../UI/ControlledInput";
+import ImagePicker from "./ImagePicker";
 export default function PlaceForm() {
   const { control, handleSubmit } = useForm({
     defaultValues: {},
@@ -8,6 +9,7 @@ export default function PlaceForm() {
   return (
     <ScrollView style={styles.form}>
       <ControlledInput control={control} name="title" />
+      <ImagePicker />
     </ScrollView>
   );
 }
